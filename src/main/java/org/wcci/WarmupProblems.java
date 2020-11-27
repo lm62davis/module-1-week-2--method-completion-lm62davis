@@ -16,6 +16,14 @@ public class WarmupProblems {
     public String stringTimes(String str, int n) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
         return null;
+        
+        String str = "Hi";
+        int n = 1;
+
+        System.out.println(str.repeat(2));
+        System.out.println(str.repeat(3));
+        System.out.println(str);
+
     }
 
     /*
