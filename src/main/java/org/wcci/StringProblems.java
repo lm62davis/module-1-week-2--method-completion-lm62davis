@@ -48,6 +48,16 @@ public class StringProblems {
     public String stringCombiner(String stringA, String stringB){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
         return null;
+        String stringA = "house";
+        String stringB = "cleaning";
+        char charArrayA[] = stringA.toCharArray();
+        char charArrayB[] = stringB.toCharArray();
+        Arrays.sort(charArrayA);
+        Arrays.sort(charArrayB);
+        String combinedArray = stringA + stringB;
+        System.out.println(combinedArray);
+
+    
     }
 
     /*
