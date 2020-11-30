@@ -74,5 +74,31 @@ public class StringProblems {
     public String left2(String str){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
         return null;
+        
+        System.out.println("String before rotation :");
+
+        System.out.println(Arrays.toString(toRotate));
+
+        int temp;
+
+        for (int i = 0; i < n; i++)
+        {
+            temp = toRotate.length;
+
+            for (int j = 0; j < toRotate.length-1; j++) {
+                toRotate[j] = toRotate[j+1];
+            }
+            toRotate[toRotate.length - 1] = String.valueOf(temp);
+        }
+
+        System.out.println("String after rotating left by " + n + " positions: ");
+
+        System.out.println(Arrays.toString(toRotate));
+    }
+
+    public static void main(String[] args)
+    {
+        leftRotate(new String[] {"carnation"}, 2);
+    }
     }
 }
