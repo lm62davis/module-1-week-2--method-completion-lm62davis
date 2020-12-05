@@ -14,6 +14,11 @@ public class LogicProblems {
      */
     public boolean squirrelPlay(int temp, boolean isSummer) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
+        if (!isSummer && temp >= 60 && temp <= 90) {
+            return true;
+        } else if (temp >= 60 && temp <= 100 && isSummer) {
+            return true;
+        }
         return false;
     }
 
@@ -29,6 +34,10 @@ public class LogicProblems {
      */
     public boolean nearTen(int num) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
+        int a = num % 10;
+        if (a <= 2 || a >= 8) {
+            return true;
+        }
         return false;
     }
 
