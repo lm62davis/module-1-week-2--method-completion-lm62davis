@@ -17,6 +17,15 @@ public class StringProblems {
 
     public String smallestStringSorter(String stringA, String stringB){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
+            if (stringA.equals(" "))
+            return stringB;
+        else if (stringA.length() < stringB.length())
+            return stringA;
+        else if (stringB.length() < stringA.length())
+            return stringB;
+        else if (stringA.length() == stringB.length())
+            return stringA + stringB;
+        
         return null;
     }
 
@@ -32,6 +41,11 @@ public class StringProblems {
      */
     public String evenUpperCaseOrOddLowerCase(String str){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
+        if (str.length() % 2 == 0)
+            return str.toUpperCase();
+        else if (str.length() % 2 != 0)
+            return str.toLowerCase();
+        
         return null;
     }
 
@@ -47,16 +61,15 @@ public class StringProblems {
      */
     public String stringCombiner(String stringA, String stringB){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
-        String stringA = "house";
-        String stringB = "cleaning";
-        char charArrayA[] = stringA.toCharArray();
-        char charArrayB[] = stringB.toCharArray();
-        Arrays.sort(charArrayA);
-        Arrays.sort(charArrayB);
-        String combinedArray = stringA + stringB;
-        System.out.println(combinedArray);
+    int strLength = stringA.compareToIgnoreCase(stringB);
+        if (strLength < 0) {
+            return stringA + stringB;
+        } else if (strLength > 0) {
+            return stringB + stringA;
+        }
 
+
+        return null;
     
     }
 
@@ -73,32 +86,7 @@ public class StringProblems {
 
     public String left2(String str){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
-        
-        System.out.println("String before rotation :");
+         return str.substring(2) + str.substring(0, 2);
 
-        System.out.println(Arrays.toString(toRotate));
-
-        int temp;
-
-        for (int i = 0; i < n; i++)
-        {
-            temp = toRotate.length;
-
-            for (int j = 0; j < toRotate.length-1; j++) {
-                toRotate[j] = toRotate[j+1];
-            }
-            toRotate[toRotate.length - 1] = String.valueOf(temp);
-        }
-
-        System.out.println("String after rotating left by " + n + " positions: ");
-
-        System.out.println(Arrays.toString(toRotate));
-    }
-
-    public static void main(String[] args)
-    {
-        leftRotate(new String[] {"carnation"}, 2);
-    }
     }
 }
