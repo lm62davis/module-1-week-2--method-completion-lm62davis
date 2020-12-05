@@ -15,16 +15,12 @@ public class WarmupProblems {
      */
     public String stringTimes(String str, int n) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
-         n = 1;
-         String x = "";
+        n = 1;
+        String x = "";
 
-        for (int i = 0; i < n; i++) ;
-        x += str;
-        //return x;
-
-        
-        return null;
-        
+        for (int i = 0; i < n; i++)
+            x += str;
+        return x;
 
 
     }
@@ -41,7 +37,7 @@ public class WarmupProblems {
      */
     public boolean icyHot(int temp1, int temp2) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
-        if ((temp1 >= 100 || temp1 <= 0) || (temp2 >= 100 || temp2 <= 0)) {
+        if ((temp1 >= 100 || temp1 <= 0) && (temp2 >= 100 || temp2 <= 0)) {
             return true;
         }
         

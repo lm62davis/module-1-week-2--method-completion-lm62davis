@@ -17,15 +17,16 @@ public class StringProblems {
 
     public String smallestStringSorter(String stringA, String stringB){
         //TODO Add the code here that meets the requirements of the problem in the comment above.
-            if (stringA.equals(" "))
-            return stringB;
-        else if (stringA.length() < stringB.length())
-            return stringA;
-        else if (stringB.length() < stringA.length())
-            return stringB;
-        else if (stringA.length() == stringB.length())
-            return stringA + stringB;
-        
+            if (stringA.equals("")) {
+                return stringB;
+            }else if (stringA.length() < stringB.length()) {
+                return stringA;
+            }else if (stringB.length() < stringA.length()) {
+                return stringB;
+            }else if (stringA.length() == stringB.length()) {
+                return stringA + stringB;
+            }
+        //System.out.println( str1.equals(str2) ); //prints false
         return null;
     }
 

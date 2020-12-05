@@ -18,6 +18,7 @@ public class LogicProblems {
             return true;
         } else if (temp >= 60 && temp <= 100 && isSummer) {
             return true;
+
         }
         return false;
     }
